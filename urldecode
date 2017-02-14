@@ -1,1 +1,2 @@
-search_and_replace SLASH '%2F' '\/g' | search_and_replace COMMA '%3A' ':g'
+#search_and_replace SLASH '%2F' '\/g' | search_and_replace COMMA '%3A' ':g'
+sed 's/%2F/\//g' | sed 's/%3A/:/g'
